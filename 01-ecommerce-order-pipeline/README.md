@@ -144,7 +144,7 @@ python scripts/generate_orders.py
 ```
 
 ## Project Timeline
-**Duration:** 3 days  
+**Duration:** 2 days  
 **Completion Date:** January 3, 2026
 
 ---
