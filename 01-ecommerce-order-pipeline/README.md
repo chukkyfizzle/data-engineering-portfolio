@@ -110,16 +110,16 @@ Average Execution Time:      ~90 seconds
 ## Screenshots
 
 ### Pipeline Overview
-![Pipeline Architecture](./screenshots/pipeline-overview.png)
+![Pipeline Architecture](./screenshots/pipeline-overview.jpg)
 
 ### Successful Execution
-![Pipeline Success](./screenshots/pipeline-success.png)
+![Pipeline Success](./screenshots/pipeline-success.jpg)
 
 ### Data Flow Transformations
-![Data Flow](./screenshots/data-flow.png)
+![Data Flow](./screenshots/data-flow.jpg)
 
 ### SQL Results
-![SQL Results](./screenshots/sql-results.png)
+![SQL Results](./screenshots/sql-results.jpg)
 
 ## How to Run
 
