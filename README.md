@@ -1,7 +1,7 @@
 # Data Engineering Portfolio
 
 ## About Me
-Power BI Developer,  Power Platform specialist and Data Engineer. Skilled in Azure ecosystem, Microsoft Favric, data modeling, and business intelligence. Currently documenting my mastery of ETL/ELT pipelines, big data processing, and cloud data architecture.
+Power BI Developer,  Power Platform specialist and Data Engineer. Skilled in Azure ecosystem, Microsoft Fabric, data modeling, and business intelligence. Currently documenting my mastery of ETL/ELT pipelines, big data processing, and cloud data architecture.
 
 ## Technical Skills
 - **Cloud Platforms:** Microsoft Azure (Data Factory, SQL Database, Blob Storage)
