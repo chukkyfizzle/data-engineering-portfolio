@@ -166,7 +166,7 @@ CSV Files → ADF Pipeline → Databricks (Bronze → Silver → Gold) → Delta
 ### Execution Steps
 1. Upload CSV files to Azure Blob Storage
 2. Configure linked services in ADF
-3. Trigger pipeline: `pl_Retail_Analytics_ETL`
+3. Trigger pipeline
 4. Monitor execution in ADF Studio
 5. Query Gold tables via Databricks SQL or connect BI tools
 
