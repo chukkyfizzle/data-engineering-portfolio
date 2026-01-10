@@ -194,7 +194,7 @@ CSV Files → ADF Pipeline → Databricks (Bronze → Silver → Gold) → Delta
 
 ## 🤝 Connect With Me
 
-- **LinkedIn:** [[Your LinkedIn](https://www.linkedin.com/in/chukwuka-nwakanma-1043a136/)]
+- **LinkedIn:** [[LinkedIn](https://www.linkedin.com/in/chukwuka-nwakanma-1043a136/)]
 - **Email:** [chuka.nwakanma@gmail.com]
 
 
