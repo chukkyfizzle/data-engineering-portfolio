@@ -103,15 +103,15 @@ CSV Files → ADF Pipeline → Databricks (Bronze → Silver → Gold) → Delta
 ## 📸 Screenshots
 
 ### Pipeline Design
-![screenshots](adf_pipeline_design.jpg)
+![ADF Pipeline](screenshots/adf_pipeline_design.jpg)
 *Azure Data Factory pipeline orchestrating Databricks notebooks*
 
 ### Successful Execution
-![screenshots](adf_debug_success.jpg)
+![Debug Success](screenshots/adf_debug_success.jpg)
 *All activities completed successfully*
 
 ### Monitoring Dashboard
-![screenshots](adf_monitoring.jpg)
+![Debug Success](screenshots/adf_monitoring.jpg)
 *Pipeline run monitoring and metrics*
 
 ---
