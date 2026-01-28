@@ -43,6 +43,23 @@ View Project Details →
 
 [View Project Details →](./retail-analytics-capstone/)
 
+### 2. [Retail Analytics Data Platform](./retail-analytics-capstone/)
+**Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
+
+Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
+
+**Key Accomplishments:**
+- 98% data quality rate with multi-layered validation framework
+- 9 production-ready Delta Lake tables across 3 architectural layers
+- Automated ADF orchestration: Bronze → Silver → Gold
+- End-to-end processing time for full dataset
+- PySpark window functions for deduplication and ranking
+- 5 pre-aggregated Gold tables for Power BI
+
+View Project Details →
+
+[View Project Details →](./retail-analytics-capstone/)
+
 ## Contact
 - **LinkedIn:** [[Chuka Nwakanma]](https://www.linkedin.com/in/chukwuka-nwakanma-1043a136/)
 - **Email:** chuka.nwakanma@gmail.com
