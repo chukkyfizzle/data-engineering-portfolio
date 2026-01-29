@@ -1,10 +1,10 @@
-# Retail Analytics Data Platform
-**End-to-End Azure Data Engineering Solution with Medallion Architecture**
+# AESO Grid Analysis
+**An end-to-end analytics platform processing real-time electricity grid data from AESO, implementing data engineering patterns with Microsoft Fabric and Power BI. **
 
 
 ## 🎯 Project Overview
 
-Complete data lakehouse platform processing 15,000+ retail transactions using **Azure Data Factory**, **Azure Databricks**, and **Delta Lake** with medallion architecture (Bronze/Silver/Gold layers).
+Complete data engineering solution that ingests, transforms, and analyzes Alberta's electricity load data, providing real-time monitoring and forecast accuracy analysis for grid operations.
 
 **Built by:** Chuka Nwakanma
 **Date:** January 2026  
@@ -14,183 +14,96 @@ Complete data lakehouse platform processing 15,000+ retail transactions using **
 
 ## 🏗️ Architecture
 ```
-CSV Files → ADF Pipeline → Databricks (Bronze → Silver → Gold) → Delta Lake Tables
+API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) → Delta Lake Tables (Power BI)
 ```
 
 **Components:**
-- **Data Source:** CSV files (sales, products, customers)
-- **Ingestion:** Azure Blob Storage
-- **Orchestration:** Azure Data Factory pipeline
-- **Processing:** Azure Databricks (PySpark)
-- **Storage:** Delta Lake (ACID transactions)
-- **Output:** 9 production-ready analytical tables
+- **Data Source:** AESO Actual Forecast Report - v1
+- **Ingestion:** Notebook Fabric Lakehouse → FIle (Staging)
+- **Processing:** Notebook Fabric Lakehouse → Table (Bronze, Silver, Gold)
+- **Storage:** Onelake Catalog
+- **Output:** 8 analytical tables (7 gold table, 1 silver table for real-time analysis)
 
 ---
 
 ## 📊 Data Flow
 
 ### **Bronze Layer (Raw Data Preservation)**
-- **Purpose:** Exact copy of source data with audit metadata
-- **Tables:** 3 (sales, products, customers)
-- **Features:**
-  - Immutable raw data
-  - Ingestion timestamps
-  - Source file tracking
-  - Full history for reprocessing
+1. HTTP GET to AESO API with date parameters
+2. JSON response validation
+3. Save raw JSON to `/Files/bronze_raw/`
+4. Parse and write to `bronze_aeso_load` Delta table
+5. Add metadata: ingestion_timestamp, api_response_code
 
-### **Silver Layer (Cleaned & Enriched)**
+### **Silver Layer (Transformed)**
 - **Purpose:** High-quality, business-ready data
 - **Tables:** 1 (sales_enriched)
 - **Transformations:**
-  - Deduplication using PySpark window functions
-  - Data quality validation (96%+ clean rate)
-  - Multi-table joins (sales + products + customers)
-  - Calculated metrics (revenue, profit margin)
-  - Date parsing and enrichment
-- **Data Quality:** 98%+ accuracy after validation
+- Parse timestamps (UTC and Mountain Prevailing Time)
+- Type conversion (string → integer for load values)
+- Calculate forecast_error_mw = actual - forecast
+- Calculate forecast_error_pct = (error / forecast) * 100
+- Extract time features: hour, day_of_week, is_weekend
+- Data quality: remove nulls, deduplicate by timestamp
 
-### **Gold Layer (Business Analytics)**
+**Output:** `silver_aeso_load` Delta table
+
+### **Gold Layer (Analytics)**
 - **Purpose:** Pre-aggregated tables for BI/reporting
-- **Tables:** 5 analytical tables
-  1. **Daily Sales Summary** - Revenue trends by date/region/category
-  2. **Product Performance** - Rankings, revenue, units sold
-  3. **Customer Segments** - Lifetime value, RFM analysis
-  4. **Regional Analysis** - Geographic performance metrics
-  5. **Executive KPI** - Key business metrics dashboard
+- **Tables:** 7 analytical tables
+1. **gold_daily_load_summary:** Daily statistics
+2. **gold_peak_demand:** Peak hour per day
+3. **gold_hourly_patterns:** Average load by hour
+4. **gold_hourly_patterns_weekends:** Average load by hour weekends
+5. **gold_forecast_accuracy_hourly*:** Accuracy metrics hourly
+6. **gold_forecast_accuracy_daily*:** Accuracy metrics daily
+7. **gold_forecast_accuracy_overall*:** Accuracy metrics overall
+
+### **Visualization Layer**
+**Purpose:** Business intelligence and monitoring
+
+**Components:**
+- Power BI Desktop for development
+- Direct Lake mode for real-time queries
+- 5 dashboard pages: Monitor, Daily, Peak, Patterns, Accuracy
 
 ---
 
 ## 🔧 Technologies & Skills
 
-**Azure Services:**
-- Azure Data Factory (Orchestration)
-- Azure Databricks (Processing)
-- Azure Blob Storage (Data Lake)
-- Delta Lake (ACID Transactions)
+**Microsoft Fabric:**
+- Notebook (Processing)
+- Lakehouse (Delta Table)
+- Onelake Catalog (Data Lake)
+- Pipeline (Orchestration, Refresh Schedule)
 
 **Programming & Tools:**
 - PySpark (Data Transformations)
-- SQL (Data Queries)
 - Python (Scripting)
 
 **Concepts Demonstrated:**
 - Medallion Architecture (Bronze/Silver/Gold)
 - ETL/ELT Pipeline Design
 - Data Quality Frameworks
-- Incremental Loading Patterns
 - ACID Transactions
-- Time Travel & Audit Compliance
-- Partitioning for Performance
 - Pipeline Orchestration
 
 ---
 
-## 📈 Key Metrics
-
-| Metric | Value |
-|--------|-------|
-| **Total Records Processed** | 15,000+ transactions |
-| **Data Quality Rate** | 98%+ clean data |
-| **Processing Time** | < 10 minutes end-to-end |
-| **Tables Created** | 9 Delta tables |
-| **Storage Format** | Parquet (compressed) |
-| **Data Partitioning** | By transaction_date |
-
-**Scheduling:** Can be triggered manually or scheduled (daily/hourly)
+**Scheduling:** is triggered daily
 
 ---
+
+### Report
+![Power Bi Report](report/actual_forecast_report.pdf)
+
 
 ## 📸 Screenshots
 
 ### Pipeline Design
-![ADF Pipeline](screenshots/adf_pipeline_design.jpg)
-*Azure Data Factory pipeline orchestrating Databricks notebooks*
-
-### Successful Execution
-![Debug Success](screenshots/adf_debug_success.jpg)
-*All activities completed successfully*
-
-### Monitoring Dashboard
-![Debug Success](screenshots/adf_monitoring.jpg)
-*Pipeline run monitoring and metrics*
+![Architecture](screenshots/architecture_diagram.jpg)
 
 ---
-
-## 💡 Key Features
-
-✅ **Complete Medallion Architecture** - Industry-standard data lakehouse pattern  
-✅ **Data Quality Validation** - Multi-layered validation ensuring 98%+ accuracy  
-✅ **ACID Transactions** - Delta Lake ensures data consistency  
-✅ **Time Travel** - Query historical versions for audit compliance  
-✅ **Automated Orchestration** - ADF pipeline handles dependencies  
-✅ **Scalable Design** - Can process millions of records  
-✅ **Production Ready** - Error handling, logging, monitoring  
-
----
-
-## 🎓 Skills Demonstrated
-
-**Data Architecture:**
-- Designed medallion architecture (Bronze/Silver/Gold)
-- Implemented lakehouse pattern with Delta Lake
-- Created star schema for analytics
-
-**Data Engineering:**
-- Built ETL pipelines with Azure Data Factory
-- PySpark transformations for large-scale data processing
-- Data quality frameworks and validation logic
-- Incremental loading and change data capture patterns
-
-**Cloud Platforms:**
-- Azure Data Factory for orchestration
-- Azure Databricks for distributed computing
-- Azure Blob Storage for data lake
-- Resource management and cost optimization
-
-**Data Quality:**
-- Deduplication strategies
-- Null handling and validation rules
-- Data profiling and anomaly detection
-- Clean data rate: 98%+
-
----
-
-## 🔄 How to Run
-
-### Prerequisites
-- Azure subscription
-- Azure Data Factory
-- Azure Databricks workspace
-- Azure Blob Storage account
-
-### Execution Steps
-1. Upload CSV files to Azure Blob Storage
-2. Configure linked services in ADF
-3. Trigger pipeline
-4. Monitor execution in ADF Studio
-5. Query Gold tables via Databricks SQL or connect BI tools
-
----
-
-## 🎯 Business Value
-
-**For Data Analysts:**
-- Pre-aggregated Gold tables for fast queries
-- Clean, validated data (98%+ quality)
-- Clear data lineage and documentation
-
-**For Business Users:**
-- Self-service analytics via BI tools
-- Real-time insights into sales performance
-- Customer segmentation for marketing
-
-**For Data Engineers:**
-- Scalable, maintainable architecture
-- Automated data pipelines
-- Easy to extend with new data sources
-
----
-
 
 ## 🤝 Connect With Me
 
@@ -209,13 +122,6 @@ This project is for portfolio demonstration purposes.
 
 ## ⚠️ Data Disclaimer
 
-**This is a demonstration project using synthetic data.**
-
-- **Data Source:** AI-generated sample data
-- **Purpose:** Portfolio demonstration and technical showcase
-- **Authenticity:** Not real business data
-- **Privacy:** No actual customer information
-
-The data structure, transformations, and analytical outputs represent real-world patterns and demonstrate production-ready data engineering capabilities.
+This report uses data from the AESO Public API. Information may change over time, and accuracy or completeness is not guaranteed. Use this report for general reference only and verify important details with official AESO sources.
 
 
