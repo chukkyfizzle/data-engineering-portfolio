@@ -29,11 +29,11 @@ API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) →
 ## 📊 Data Flow
 
 ### **Bronze Layer (Raw Data Preservation)**
-1. HTTP GET to AESO API with date parameters
-2. JSON response validation
-3. Save raw JSON to `/Files/bronze_raw/`
-4. Parse and write to `bronze_aeso_load` Delta table
-5. Add metadata: ingestion_timestamp, api_response_code
+- HTTP GET to AESO API with date parameters
+- JSON response validation
+- Save raw JSON to `/Files/bronze_raw/`
+- Parse and write to `bronze_aeso_load` Delta table
+- Add metadata: ingestion_timestamp, api_response_code
 
 ### **Silver Layer (Transformed)**
 - **Purpose:** High-quality, business-ready data
