@@ -45,6 +45,7 @@ View Project Details →
 
 ### 3. [AESO Alberta Grid Analytics Platform](./03-aeso-grid-analytics/)
 **Tech Stack:** Microsoft Fabric, PySpark, Power BI
+
 Built a real-time analytics platform processing electricity grid data from Alberta's Electric System Operator (AESO) using Microsoft Fabric, PySpark, and Power BI.
 
 **Key Accomplishments:**
