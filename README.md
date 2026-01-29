@@ -41,7 +41,7 @@ Built complete end-to-end data lakehouse with medallion architecture (Bronze/Sil
 
 View Project Details →
 
-[View Project Details →](./retail-analytics-capstone/)
+[View Project Details →](./2-retail-analytics-capstone/)
 
 ### 3. [AESO Alberta Grid Analytics Platform](./03-aeso-grid-analytics/)
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
@@ -58,7 +58,7 @@ Built complete end-to-end data lakehouse with medallion architecture (Bronze/Sil
 
 View Project Details →
 
-[View Project Details →](./retail-analytics-capstone/)
+[View Project Details →](./03-aeso-grid-analytics/)
 
 ## Contact
 - **LinkedIn:** [[Chuka Nwakanma]](https://www.linkedin.com/in/chukwuka-nwakanma-1043a136/)
