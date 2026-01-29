@@ -95,7 +95,7 @@ API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) →
 ---
 
 ### Report
-![Power Bi Report](report/actual_forecast_report.pdf)
+[Power Bi Report](report/actual_forecast_report.pdf)
 
 
 ## 📸 Screenshots
