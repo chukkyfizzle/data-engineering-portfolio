@@ -101,7 +101,7 @@ API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) →
 ![Architecture](screenshots/architecture_diagram.jpg)
 
 ### Code
-[Code](code/AESO_Bronze_SIlver_Gold.ipynb)
+[Code (Notebook)](code/AESO_Bronze_SIlver_Gold.ipynb)
 
 ---
 
