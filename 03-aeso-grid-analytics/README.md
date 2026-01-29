@@ -97,17 +97,13 @@ API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) →
 ### Report
 [Power Bi Report](report/actual_forecast_report.pdf)
 
-
-## Screenshots
-
 ### Architecture Design
 ![Architecture](screenshots/architecture_diagram.jpg)
 
-## Screenshots
-
 ### Code
-![Code](code/AESO_Bronze_SIlver_Gold.ipynb)
+[Code](code/AESO_Bronze_SIlver_Gold.ipynb)
 ---
+
 
 ## 🤝 Connect With Me
 
