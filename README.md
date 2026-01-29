@@ -26,7 +26,7 @@ View Project Details →
 
 [View Project Details →](./01-ecommerce-order-pipeline/)
 
-### 2. [Retail Analytics Data Platform](./retail-analytics-capstone/)
+### 2. [Retail Analytics Data Platform](./02-retail-analytics-capstone/)
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
 
 Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
@@ -43,7 +43,7 @@ View Project Details →
 
 [View Project Details →](./retail-analytics-capstone/)
 
-### 2. [Retail Analytics Data Platform](./retail-analytics-capstone/)
+### 3. [AESO Alberta Grid Analytics Platform](./03-aeso-grid-analytics/)
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
 
 Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
