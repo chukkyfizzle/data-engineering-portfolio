@@ -44,17 +44,15 @@ View Project Details →
 [View Project Details →](./2-retail-analytics-capstone/)
 
 ### 3. [AESO Alberta Grid Analytics Platform](./03-aeso-grid-analytics/)
-**Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
-
-Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
+**Tech Stack:** Microsoft Fabric, PySpark, Power BI
+Built a real-time analytics platform processing electricity grid data from Alberta's Electric System Operator (AESO) using Microsoft Fabric, PySpark, and Power BI.
 
 **Key Accomplishments:**
-- 98% data quality rate with multi-layered validation framework
-- 9 production-ready Delta Lake tables across 3 architectural layers
-- Automated ADF orchestration: Bronze → Silver → Gold
-- End-to-end processing time for full dataset
-- PySpark window functions for deduplication and ranking
-- 5 pre-aggregated Gold tables for Power BI
+- Automated hourly data ingestion from AESO API
+- Medallion architecture (Bronze/Silver/Gold layers)
+- 7 analytics tables for different business questions
+- Real-time dashboard for monitoring
+- 98%+ data quality through systematic validation
 
 View Project Details →
 
