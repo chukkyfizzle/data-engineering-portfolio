@@ -15,7 +15,7 @@ Complete data engineering solution that ingests, transforms, and analyzes Albert
 ## Architecture
 
 ```
-API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) → Delta Lake Tables (Power BI)
+API → Notebook → Micrsofot Fabric Lakehouse (Bronze → Silver → Gold) → Delta Lake Tables (Power BI).
 ```
 
 **Components:**
