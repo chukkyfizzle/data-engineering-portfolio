@@ -106,6 +106,7 @@ This project started with a simple problem: my wife needed reliable weather info
 
 ![Automate Fow](screenshots/Weather_API.jpg)
 ![Data Pipeline](screenshots/Data_Pipeline_Copy_Activity.jpg)
+![Scheduled Pipeline](screenshots/Scheduled_Pipeline.jpg)
 
 ### Codes
 
