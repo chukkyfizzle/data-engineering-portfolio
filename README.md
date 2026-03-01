@@ -19,13 +19,6 @@ Power BI Developer, Power Platform specialist and Data Engineer. Skilled in Azur
 
 Built a production-level ETL pipeline processing 10,000+ daily orders with data quality validation, deduplication, and error handling.
 
-**Key Accomplishment:**
-
-- 96.6% data quality success rate
-- Automated validation removing 347 invalid records
-- Implemented staging → production pattern
-- Full pipeline observability and monitoring
-
 View Project Details →
 
 [View Project Details →](./01-ecommerce-order-pipeline/)
@@ -36,15 +29,6 @@ View Project Details →
 
 Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
 
-**Key Accomplishments:**
-
-- 98% data quality rate with multi-layered validation framework
-- 9 production-ready Delta Lake tables across 3 architectural layers
-- Automated ADF orchestration: Bronze → Silver → Gold
-- End-to-end processing time for full dataset
-- PySpark window functions for deduplication and ranking
-- 5 pre-aggregated Gold tables for Power BI
-
 View Project Details →
 
 [View Project Details →](./2-retail-analytics-capstone/)
@@ -53,20 +37,21 @@ View Project Details →
 
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
 
-Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
-
-**Key Accomplishments:**
-
-- 98% data quality rate with multi-layered validation framework
-- 9 production-ready Delta Lake tables across 3 architectural layers
-- Automated ADF orchestration: Bronze → Silver → Gold
-- End-to-end processing time for full dataset
-- PySpark window functions for deduplication and ranking
-- 5 pre-aggregated Gold tables for Power BI
+An end-to-end analytics platform processing real-time electricity grid data from AESO, implementing data engineering patterns with Microsoft Fabric and Power BI.
 
 View Project Details →
 
 [View Project Details →](./03-aeso-grid-analytics/)
+
+### 4. [Calgary Weather Pipeline](./04-calgary-weather-pipeline/)
+
+**Tech Stack:** Power Automate, Azure Blob Storage, Microsoft Fabric, PySpark, Delta Lake, Power BI
+
+An end-to-end analytics platform processing Calgary weather data from WeatherAPI, implementing automation and data engineering patterns with Microsoft Power Automate, Microsoft Fabric and Power BI.
+
+View Project Details →
+
+[View Project Details →](./04-calgary-weather-pipeline/)
 
 ## Contact
 
@@ -74,4 +59,4 @@ View Project Details →
 - **Email:** chuka.nwakanma@gmail.com
 - **Location:** Calgary, Alberta, Canada
 
-_Last Updated: January 2026_
+_Last Updated: March 2026_
