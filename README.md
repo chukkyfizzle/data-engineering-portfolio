@@ -1,9 +1,11 @@
 # Data Engineering Portfolio
 
 ## About Me
-Power BI Developer,  Power Platform specialist and Data Engineer. Skilled in Azure ecosystem, Microsoft Fabric, data modeling, and business intelligence. Currently documenting my mastery of ETL/ELT pipelines, big data processing, and cloud data architecture.
+
+Power BI Developer, Power Platform specialist and Data Engineer. Skilled in Azure ecosystem, Microsoft Fabric, data modeling, and business intelligence. Currently documenting my mastery of ETL/ELT pipelines, big data processing, and cloud data architecture.
 
 ## Technical Skills
+
 - **Cloud Platforms:** Microsoft Azure (Data Factory, SQL Database, Blob Storage)
 - **Data Tools:** Power BI, Power Platform, Azure Data Studio
 - **Languages:** SQL, Python, DAX, Power Query M
@@ -12,11 +14,13 @@ Power BI Developer,  Power Platform specialist and Data Engineer. Skilled in Azu
 ## Projects
 
 ### 1. [E-Commerce Order Processing Pipeline](./01-ecommerce-order-pipeline/)
+
 **Tech Stack:** Azure Data Factory, Azure SQL Database, Azure Blob Storage
 
 Built a production-level ETL pipeline processing 10,000+ daily orders with data quality validation, deduplication, and error handling.
 
 **Key Accomplishment:**
+
 - 96.6% data quality success rate
 - Automated validation removing 347 invalid records
 - Implemented staging → production pattern
@@ -27,11 +31,13 @@ View Project Details →
 [View Project Details →](./01-ecommerce-order-pipeline/)
 
 ### 2. [Retail Analytics Data Platform](./02-retail-analytics-capstone/)
+
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
 
 Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
 
 **Key Accomplishments:**
+
 - 98% data quality rate with multi-layered validation framework
 - 9 production-ready Delta Lake tables across 3 architectural layers
 - Automated ADF orchestration: Bronze → Silver → Gold
@@ -44,11 +50,13 @@ View Project Details →
 [View Project Details →](./2-retail-analytics-capstone/)
 
 ### 3. [AESO Alberta Grid Analytics Platform](./03-aeso-grid-analytics/)
+
 **Tech Stack:** Azure Data Factory, Azure Databricks, Delta Lake, PySpark, Azure Blob Storage
 
 Built complete end-to-end data lakehouse with medallion architecture (Bronze/Silver/Gold) processing 15,000+ retail transactions, orchestrated via ADF pipeline with automated Databricks notebook execution.
 
 **Key Accomplishments:**
+
 - 98% data quality rate with multi-layered validation framework
 - 9 production-ready Delta Lake tables across 3 architectural layers
 - Automated ADF orchestration: Bronze → Silver → Gold
@@ -61,8 +69,9 @@ View Project Details →
 [View Project Details →](./03-aeso-grid-analytics/)
 
 ## Contact
+
 - **LinkedIn:** [[Chuka Nwakanma]](https://www.linkedin.com/in/chukwuka-nwakanma-1043a136/)
 - **Email:** chuka.nwakanma@gmail.com
 - **Location:** Calgary, Alberta, Canada
 
-*Last Updated: January 2026*
+_Last Updated: January 2026_
