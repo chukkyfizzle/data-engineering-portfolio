@@ -109,13 +109,13 @@ This project started with a simple problem: my wife needed reliable weather info
 
 ### Codes
 
-![Ingest into Bronze](code/01.Ingest_into_bronze.ipynb)
-![Silver - Transformation](code/02.Silver_transform)
-![Gold - Aggregation BI Ready](code/03.Gold_transform)
+[Ingest into Bronze](code/01.Ingest_into_bronze.ipynb)
+[Silver - Transformation](code/02.Silver_transform)
+[Gold - Aggregation BI Ready](code/03.Gold_transform)
 
 ### Report
 
-![Power Bi Report](report/Calgary_Weather.pdf)
+[Power Bi Report](report/Calgary_Weather.pdf)
 
 ---
 
